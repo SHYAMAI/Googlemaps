@@ -1,0 +1,10 @@
+
+#!pip install geopy
+from geopy.geocoders import Nominatim
+geolocator = Nominatim(user_agent="AIzaSyCUn_7yj9L0ZOFz8BkGyUBcdaM5NYWfEJw")
+#location = geolocator.geocode("175 5th Avenue NYC")
+location = geolocator.geocode("Chennai central")
+
+print(location.address)
+print(location.latitude,location.latitude) 
+
